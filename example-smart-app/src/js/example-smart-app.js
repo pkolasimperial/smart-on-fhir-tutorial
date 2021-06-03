@@ -67,9 +67,10 @@ var extractData = function() {
 				var reactionString = [];
 				if(allergies[i].reaction !== undefined){
 					var rLen = allergies[i].reaction.length;
-					for(var j = 0; j<rLen; j++)
-					reactionString.push(allergies[i].reaction[j].manifestation[0].text);
-					allergyTable += "<td>" + reactionString.join(", ") + "</td></tr>";
+					for(var j=0;j<rLen;j++){
+						reactionString.push(allergies[i].reaction[j].manifestation[0].text);
+						allergyTable += "<td>" + reactionString.join(", ") + "</td></tr>";
+					}
 				}else
 					allergyTable += "</tr>";
 			  }
