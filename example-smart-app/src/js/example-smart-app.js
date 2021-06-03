@@ -71,9 +71,9 @@ var extractData = function() {
 						var mLen = allergies[i].reaction[j].manifestation.length;
 						for(var k=0; k<mLen; k++){
 							reactionString.push(allergies[i].reaction[j].manifestation[k].text);
-							allergyTable += "<td>" + reactionString.join(", ") + "</td></tr>";
 						}
 					}
+					allergyTable += "<td>" + reactionString.join(", ") + "</td></tr>";
 				}else
 					allergyTable += "</tr>";
 			  }
