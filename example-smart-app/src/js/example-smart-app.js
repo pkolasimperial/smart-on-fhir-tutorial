@@ -64,8 +64,8 @@ var extractData = function() {
 			  allergyTable += "<tr><td><b>Allergy substance</b></td><td><b>Reaction</b></td></tr>";
 			  for(var i = 0; i<allergyLen; i++){
 				allergyTable += "<tr><td>" + allergies[i].substance.text + "</td>";
-				var reactionString = [];
 				if(allergies[i].reaction !== undefined){
+					var reactionString = [];
 					var rLen = allergies[i].reaction.length;
 					for(var j=0;j<rLen;j++){
 						var mLen = allergies[i].reaction[j].manifestation.length;
