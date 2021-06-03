@@ -68,8 +68,11 @@ var extractData = function() {
 				if(allergies[i].reaction !== undefined){
 					var rLen = allergies[i].reaction.length;
 					for(var j=0;j<rLen;j++){
-						reactionString.push(allergies[i].reaction[j].manifestation[0].text);
-						allergyTable += "<td>" + reactionString.join(", ") + "</td></tr>";
+						var mLen = allergies[i].reaction[j].manifestation.length;
+						for(var k=0; k<mLen; k++){
+							reactionString.push(allergies[i].reaction[j].manifestation[k].text);
+							allergyTable += "<td>" + reactionString.join(", ") + "</td></tr>";
+						}
 					}
 				}else
 					allergyTable += "</tr>";
