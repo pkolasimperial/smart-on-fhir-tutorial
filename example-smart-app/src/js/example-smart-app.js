@@ -19,7 +19,7 @@ var extractData = function() {
                               'http://loinc.org|8480-6', 'http://loinc.org|2085-9',
                               'http://loinc.org|2089-1', 'http://loinc.org|55284-4']
                       },
-					  date: 'gt2021-01-01',
+					  date: 'gt2019-01-01',
 					  category: 'vital-signs'
                     }
                   });
