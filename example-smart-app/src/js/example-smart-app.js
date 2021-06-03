@@ -61,7 +61,7 @@ var extractData = function() {
 		  if(allergyLen === 0){
 			  allergyTable += "<tr><td>No allergies found</td></tr>";
 		  }else{
-			  allergyTable += "<tr><td>Allergy substance</td><td>Reaction</td></tr>";
+			  allergyTable += "<tr><td><strong>Allergy substance</strong></td><td><strong>Reaction</strong></td></tr>";
 			  for(var i = 0; i<allergyLen; i++){
 				allergyTable += "<tr><td>" + allergies[i].substance.text + "</td>";
 				var reactionString = [];
